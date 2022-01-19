@@ -1,9 +1,13 @@
 @media ( max-width: 960px )
 .menu-button
     display: none
-@media ( max-width: 560px )
+.hotel
+        &-info
+            &_offer
+                margin-left: 14px
+@media ( max-width: 768px )
     .container
-        max-width: 420px
+        max-width: 560px
         width: 97%
     .navbar
         &_search
@@ -29,6 +33,28 @@
             width: 21px
             height: 2px
             background-color:#000
+          
+    .hotel
+        &-wrapper
+            justify-content: space-between
+        
+        &-info
+            &_rating
+                display: none
+            &_offer
+                margin-left: 0
+                order: -1
+            &_text
+                width: 100%
+            .stars
+                flex-basis: content
+    
+
+
+
+        
+
+ 
 
     
     

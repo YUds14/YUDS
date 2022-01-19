@@ -356,9 +356,13 @@ template {
   display: none;
 }
 
-@media (max-width: 560px) {
+.hotel-info_offer {
+  margin-left: 14px;
+}
+
+@media (max-width: 768px) {
   .container {
-    max-width: 420px;
+    max-width: 560px;
     width: 97%;
   }
 
@@ -393,6 +397,27 @@ template {
     height: 2px;
     background-color: #000;
   }
+
+  .hotel-wrapper {
+    justify-content: space-between;
+  }
+  .hotel-info_rating {
+    display: none;
+  }
+  .hotel-info_offer {
+    margin-left: 0;
+    order: -1;
+  }
+  .hotel-info_text {
+    width: 100%;
+  }
+  .hotel-info .stars {
+    flex-basis: content;
+  }
+
+  .stars {
+    flex-basis: 100%;
+  }
 }
 .navbar-top {
   display: flex;
@@ -401,6 +426,7 @@ template {
 }
 .navbar-menu {
   display: flex;
+  padding: 0;
   align-items: center;
   justify-content: space-between;
   list-style-type: none;
@@ -431,7 +457,9 @@ template {
 }
 
 .logo {
-  padding: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .user {
@@ -456,4 +484,84 @@ template {
 
 .navbar-menu_link {
   color: #fff;
+}
+
+.breadcramp-list {
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+  margin: 0;
+  list-style-type: none;
+}
+.breadcramp-list_item {
+  font-size: 10px;
+  line-height: 13px;
+}
+.breadcramp-list_item:not(:last-child)::after {
+  content: "/";
+  margin-right: 4px;
+}
+.breadcramp-list_link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hotel {
+  padding-top: 23px;
+  padding-bottom: 70px;
+}
+.hotel-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hotel-info_offer {
+  margin-top: 4px;
+}
+.hotel_description {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 15px;
+}
+.hotel-name {
+  font-style: 24px;
+  line-height: 30px;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+.hotel-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.offer {
+  font-size: 10px;
+  line-height: 13px;
+  padding: 4px 9px;
+  background-color: #EC1F46;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.rating {
+  max-width: 65px;
+  min-height: 45px;
+  text-align: center;
+  background-color: #EC1F46;
+  color: #fff;
+  border-radius: 8px;
+}
+.rating_text {
+  font-size: 8px;
+  line-height: 10px;
+}
+.rating_count {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.stars {
+  flex-basis: 100%;
 }/*# sourceMappingURL=style.css.map */

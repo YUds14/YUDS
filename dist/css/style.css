@@ -414,10 +414,6 @@ template {
   .hotel-info .stars {
     flex-basis: content;
   }
-
-  .stars {
-    flex-basis: 100%;
-  }
 }
 .navbar-top {
   display: flex;
@@ -564,4 +560,32 @@ template {
 
 .stars {
   flex-basis: 100%;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+  position: relative;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+}
+.slider-button--next {
+  right: 18px;
+  background-image: url(../../img/chevron-right.svg);
+}
+.slider-button--prev {
+  left: 18px;
+  background-image: url(../../img/chevron-left.svg);
 }/*# sourceMappingURL=style.css.map */

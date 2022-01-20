@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="dist/css/style.css">
     <title>Best Tour Plan - Hotel Booking</title>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="dist/css/style.css">
+
 </head>
 <body>
     <header class="navbar">
@@ -16,7 +18,7 @@
                 <a href="#" class="logo">
                     <img src="img/horizontal-logo.svg" alt="Logo:Best Tour Plan" class="logo_image">
                 </a>
-                <form action="" class="search navbar_search">
+                <form action="#" class="search navbar_search">
                     <input type="text" class="search_input" placeholder="Search Location">
                     <button class="search_button">
                         <img src="img/search.svg" alt="Icon:search">
@@ -96,8 +98,30 @@
                 </div>
                 <!-- /.hotel-info_rating -->
             </div>
+
+            <div class="hotel-grid">
+                <div class="slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/Slider.jpg" alt="swiper-slide"></div>
+                            <div class="swiper-slide"><img src="img/Slider.jpg" alt="swiper-slide"></div>
+                            <div class="swiper-slide"><img src="img/Slider.jpg" alt="swiper-slide"></div>
+                        </div>
+                    <!-- If we need navigation buttons -->
+                        <button class="slider-button slider-button--prev"></button>
+                        <button class="slider-button slider-button--next"></button>
+                        <!-- If we need scrollbar -->
+                    </div>
+                </div>
+            </div>
+            
         </div>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
         <!-- /.container -->
     </section>
+
+    
+   
 </body>
 </html>

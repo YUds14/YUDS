@@ -541,6 +541,53 @@ template {
   flex-direction: column;
   justify-content: space-between;
 }
+.hotel-swiper {
+  width: 728px;
+  height: 450px;
+  position: relative;
+  border-radius: 8px;
+}
+.hotel-slider {
+  width: 728px;
+  height: 450px;
+}
+.hotel-slider_item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.hotel-slider_item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(0, 122, 233, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+}
+.hotel-slider_button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+}
+.hotel-slider_button--next {
+  right: 18px;
+  background-image: url(../../img/chevron-right.svg);
+}
+.hotel-slider_button--prev {
+  left: 18px;
+  background-image: url(../../img/chevron-left.svg);
+}
 
 .offer {
   font-size: 10px;
@@ -570,50 +617,6 @@ template {
 
 .stars {
   flex-basis: 100%;
-}
-
-.swiper {
-  width: 100%;
-  height: 450px;
-  position: relative;
-  border-radius: 8px;
-}
-.swiper::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(rgba(0, 122, 223, 0.6) 0%, rgba(255, 255, 255, 0.16) 100%);
-  z-index: 10;
-}
-
-.slider {
-  width: 728px;
-}
-.slider-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 99;
-  width: 30px;
-  height: 30px;
-  border: none;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 10px;
-  background-color: transparent;
-}
-.slider-button--next {
-  right: 18px;
-  background-image: url(../../img/chevron-right.svg);
-}
-.slider-button--prev {
-  left: 18px;
-  background-image: url(../../img/chevron-left.svg);
 }
 
 .booking {

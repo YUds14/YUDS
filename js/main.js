@@ -19,7 +19,7 @@ const hotelslider = new Swiper('.hotel-slider', {
   
     // Navigation arrows
     navigation: {
-      nextEl: '.rewiur-slider_button-next',
-      prevEl: '.rewiur-slider_button-prev',
+      nextEl: '.rewiur-slider_button--next',
+      prevEl: '.rewiur-slider_button--prev',
     }
   });

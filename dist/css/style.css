@@ -416,6 +416,10 @@ template {
     flex-basis: content;
   }
 }
+.rewiur-slider_item {
+  max-width: 579px;
+}
+
 .navbar-top {
   display: flex;
   align-items: center;
@@ -801,7 +805,7 @@ template {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 730px;
+  max-width: 730px;
   margin: 45px auto 0;
   margin-top: 45px;
   padding: 0 62px 30px;
@@ -843,4 +847,39 @@ template {
 .rewiur-slider_button--next {
   background-image: url(../../img/chevron-right1.svg);
   right: 0;
+}
+
+.activites {
+  padding: 60px 0 90px 0;
+}
+.activites_title {
+  font-style: bold;
+  font-style: 24px;
+  line-height: 30px;
+  line-height: 100%;
+  vertical-align: top;
+  text-transform: uppercase;
+  margin-bottom: 57px;
+}
+.activites-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 255px;
+  height: 255px;
+}
+.card_img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */

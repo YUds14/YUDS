@@ -353,73 +353,6 @@ template {
   display: none;
 }
 
-.menu-button {
-  display: none;
-}
-
-.hotel-info_offer {
-  margin-left: 14px;
-}
-
-@media (max-width: 768px) {
-  .container {
-    max-width: 560px;
-    width: 97%;
-  }
-
-  .navbar_search {
-    display: none;
-  }
-
-  .user_avatar {
-    display: none;
-  }
-  .user_name {
-    display: none;
-  }
-
-  .navbar-bottom {
-    display: none;
-  }
-
-  .menu-button {
-    padding: 0;
-    border: none;
-    display: flex;
-    background-color: #fff;
-    align-content: center;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 26px;
-    height: 16px;
-  }
-  .menu-button_line {
-    width: 21px;
-    height: 2px;
-    background-color: #000;
-  }
-
-  .hotel-wrapper {
-    justify-content: space-between;
-  }
-  .hotel-info_rating {
-    display: none;
-  }
-  .hotel-info_offer {
-    margin-left: 0;
-    order: -1;
-  }
-  .hotel-info_text {
-    width: 100%;
-  }
-  .hotel-info .stars {
-    flex-basis: content;
-  }
-}
-.rewiur-slider_item {
-  max-width: 579px;
-}
-
 .navbar-top {
   display: flex;
   align-items: center;
@@ -917,4 +850,93 @@ template {
   background-color: #EC1F46;
   border-radius: 6px;
   color: white;
+}
+
+.footer {
+  background-color: #0A223D;
+  color: #fff;
+  padding-top: 108px;
+  padding-bottom: 46px;
+}
+.footer_ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.footer_item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+}
+.footer_link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-button {
+  display: none;
+}
+
+.hotel-info_offer {
+  margin-left: 14px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 560px;
+    width: 97%;
+  }
+
+  .navbar_search {
+    display: none;
+  }
+
+  .user_avatar {
+    display: none;
+  }
+  .user_name {
+    display: none;
+  }
+
+  .navbar-bottom {
+    display: none;
+  }
+
+  .menu-button {
+    padding: 0;
+    border: none;
+    display: flex;
+    background-color: #fff;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 26px;
+    height: 16px;
+  }
+  .menu-button_line {
+    width: 21px;
+    height: 2px;
+    background-color: #000;
+  }
+
+  .hotel-wrapper {
+    justify-content: space-between;
+  }
+  .hotel-info_rating {
+    display: none;
+  }
+  .hotel-info_offer {
+    margin-left: 0;
+    order: -1;
+  }
+  .hotel-info_text {
+    width: 100%;
+  }
+  .hotel-info .stars {
+    flex-basis: content;
+  }
+}
+.rewiur-slider_item {
+  max-width: 579px;
 }/*# sourceMappingURL=style.css.map */

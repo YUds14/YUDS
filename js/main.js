@@ -23,3 +23,8 @@ const hotelslider = new Swiper('.hotel-slider', {
       prevEl: '.rewiur-slider_button--next',
     }
   });
+  var menuBottom=document.querySelector(".menu-button");
+  menuBottom.addEventListener('click',function(){
+    console.log("клик по кнопке меню");
+    document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom_visible");
+  });

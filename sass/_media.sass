@@ -6,19 +6,52 @@
             &_offer
                 margin-left: 14px
 @media ( max-width: 768px )
+    body
+        padding-top: 88px
     .container
         max-width: 560px
         width: 97%
     .navbar
-        &_search
+        &-mobile_fixed
+            position: fixed
+            background-color: #fff
+            left: 0
+            right: 0
+            top: 0
+            z-index: 99
+        &-bottom
             display: none
-    .user
-        &_avatar
-            display: none
-        &_name
-            display: none
-    .navbar-bottom
-        display: none
+            &_visible
+                display: block
+                position: fixed
+                top: 78px
+                left: 0
+                right: 0
+                bottom: 0
+        &_search,&_user
+            &--mobile
+                &_hidden
+                    display: none
+        &-menu
+            flex-direction: column
+            &_item
+                margin-bottom: 20px
+            &_search
+                display: none
+    .search-menu_item--mobile_visible
+        display: block
+    .user-menu_item--mobile_visible
+        display: flex
+    .navbar_user--mobile_visible
+        flex-direction: column
+        justify-content: center
+    .user_name
+        &_ligth
+        color: #fff
+        margin-left: 0
+        margin-top: 10px
+        text-decoration: none
+
     .menu-button
         padding: 0
         border: none
